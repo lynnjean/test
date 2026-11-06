@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이메일 입력</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">이메일 입력</h1>
+    <p class="subtitle">사용하시는 이메일 주소를 입력해 주세요.</p>
+
+    <form id="email-form" novalidate>
+      <div class="field">
+        <label for="email">이메일</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          autocomplete="email"
+          inputmode="email"
+          aria-describedby="email-message"
+          required
+        />
+        <p id="email-message" class="message" aria-live="polite"></p>
+      </div>
+
+      <button type="submit" class="submit">확인</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
